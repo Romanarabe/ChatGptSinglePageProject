@@ -1,0 +1,13 @@
+@media (max-width: 900px) {
+  .container .article-wrapper {
+    flex-direction: column;
+    gap: 100px;
+    width: 100%;
+  }
+  .container .article-wrapper .video {
+    width: 100%;
+  }
+  .container .article-wrapper .video iframe {
+    width: 100%;
+  }
+}
