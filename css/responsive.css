@@ -10,4 +10,15 @@
   .container .article-wrapper .video iframe {
     width: 100%;
   }
+  .other-blog .grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (max-width: 620px) {
+  .container {
+    width: 100%;
+  }
+  .other-blog .grid {
+    grid-template-columns: 1fr;
+  }
 }
