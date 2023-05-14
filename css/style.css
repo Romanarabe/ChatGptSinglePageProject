@@ -128,3 +128,69 @@
   border-width: 2px;
   opacity: 0.5;
 }
+/*   FOOTER SECTION   */
+.footer {
+  background-color: rgb(0, 45, 104);
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  width: 100%;
+  padding: 20px 0px;
+}
+.footer a {
+  color: white;
+  font-size: small;
+}
+.footer h3 {
+  font-size: 18px;
+}
+.footer p,
+h4,
+ul li {
+  font-size: 16px;
+}
+.footer ul li {
+  padding-bottom: 30px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.footer .footer-top {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: auto;
+  padding: 0px 20px;
+}
+.footer .footer-top .footer-1 {
+  max-width: 250px;
+}
+.footer .footer-top .footer-2 a {
+  font-size: 18px;
+  text-decoration: none;
+  font-weight: 600;
+}
+.footer-bottom {
+  text-align: center;
+  padding-bottom: 15px;
+}
+.footer-bottom h4 {
+  font-weight: 400;
+  font-size: 18px;
+}
+.footer-2 ul > li > img {
+  width: 50px;
+  height: 50px;
+}
+.footer-3 > ul > li a:hover,
+.footer-2 > ul > li a:hover,
+.footer-4 > ul > li a:hover {
+  color: rgb(19, 187, 125);
+  cursor: pointer;
+}
+.footer-4 > ul > li > span {
+  padding-left: 15px;
+}
+.footer-4 > ul > li > i {
+  color: rgb(19, 187, 125);
+}
+/* FIX THE RESPONSIVE AND ADJUST UL PADDING LEFT */
