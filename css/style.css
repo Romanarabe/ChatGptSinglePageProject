@@ -1,4 +1,69 @@
 @import url("https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,700&family=Hanken+Grotesk:ital,wght@0,300;0,700;0,800;1,500;1,700&family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Open+Sans:wght@300;400;500&family=Roboto+Mono:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500;1,600&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+/* Style for Navbar Section*/
+.navbar {
+  position: fixed;
+  width: 100%;
+  padding: 15px;
+  font-family: "Montserrat", sans-serif;
+  background-color: rgb(0, 45, 104);
+  font-size: 25px;
+  z-index: 1;
+}
+.navbar.sticky {
+  padding: 15px;
+}
+
+.navbar .max-width {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.navbar .logo a {
+  color: white;
+  font-size: 35px;
+  font-weight: 600;
+  text-decoration: none;
+}
+.navbar .logo a:hover {
+  opacity: 0.5;
+}
+.navbar .menu li {
+  list-style: none;
+  display: inline-block;
+}
+.navbar .menu li a {
+  display: block;
+  color: white;
+  font-size: 20px;
+  font-weight: 400;
+  margin-left: 30px;
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+.navbar .menu li a:hover {
+  opacity: 0.5;
+}
+.menu-btn {
+  cursor: pointer;
+}
+.home {
+  width: 100%;
+}
+.home .container {
+  width: 100%;
+}
+.home .container img {
+  width: 100%;
+  background-position: center;
+}
+.home {
+  padding-top: 65px;
+}
 .container {
   width: 90%;
   margin: auto;
@@ -25,6 +90,7 @@
 .container h1 {
   font-size: 25px;
   color: rgba(0, 0, 0, 0.886);
+  margin-bottom: 35px;
 }
 .container .article-wrapper {
   display: flex;
@@ -55,6 +121,7 @@
   max-width: 1000px;
   margin: auto;
   font-family: "Montserrat", sans-serif;
+  padding: 10px;
 }
 .other-blog .head {
   display: flex;
@@ -75,6 +142,7 @@
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 30px;
+  margin-bottom: 100px;
 }
 .other-blog .grid .blog {
   height: auto;
@@ -101,7 +169,7 @@
   object-fit: cover;
 }
 .other-blog .grid .blog .detail {
-  padding: 0px 30px;
+  padding: 15px 30px;
 }
 .other-blog .grid .blog .detail .creator img,
 .other-blog .grid .blog .detail .creator span {
@@ -119,6 +187,7 @@
 .other-blog .grid .blog .detail .title p a {
   text-decoration: none;
   color: black;
+  font-size: 18px;
 }
 .other-blog .grid .blog .detail .title p a:hover {
   text-decoration: underline;
@@ -142,6 +211,7 @@
 }
 .footer h3 {
   font-size: 18px;
+  margin-bottom: 15px;
 }
 .footer p,
 h4,
@@ -160,6 +230,7 @@ ul li {
   max-width: 1200px;
   margin: auto;
   padding: 0px 20px;
+  padding-bottom: 30px;
 }
 .footer .footer-top .footer-1 {
   max-width: 250px;
@@ -175,7 +246,7 @@ ul li {
 }
 .footer-bottom h4 {
   font-weight: 400;
-  font-size: 18px;
+  font-size: 16px;
 }
 .footer-2 ul > li > img {
   width: 50px;

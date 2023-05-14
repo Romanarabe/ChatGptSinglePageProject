@@ -1,3 +1,68 @@
+/*Responsiveness for NavBar*/
+@media (max-width: 1920px) {
+  .header .max-width {
+    margin-left: 0px;
+  }
+  .menu-btn {
+    display: none;
+    z-index: 999;
+  }
+}
+@media (max-width: 1104px) {
+  .header .max-width .header-img {
+    height: 85%;
+    width: 85%;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 991px) {
+  .max-width {
+    padding: 0 50px;
+  }
+  .header .max-width .header-img {
+    height: 75%;
+    width: 75%;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 947px) {
+  .menu-btn {
+    display: block;
+    z-index: 999;
+  }
+  .navbar .menu {
+    position: fixed;
+    height: 80vh;
+    width: 100%;
+    left: -100%;
+    top: 0;
+    background: black;
+    opacity: 90%;
+    text-align: center;
+    padding-top: 80px;
+  }
+  .navbar .menu.active {
+    left: 0;
+  }
+  .navbar .menu li {
+    display: block;
+  }
+  .navbar .menu li a {
+    display: inline-block;
+    margin: 20px;
+    font-size: 20px;
+  }
+  .max-width {
+    max-width: 930px;
+  }
+  .header .max-width .header-img {
+    height: 65%;
+    width: 65%;
+    justify-content: center;
+  }
+}
 @media (max-width: 900px) {
   .container .article-wrapper {
     flex-direction: column;
