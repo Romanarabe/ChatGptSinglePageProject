@@ -8,14 +8,15 @@
 .navbar {
   position: fixed;
   width: 100%;
-  padding: 15px;
+  padding: 15px 45px;
   font-family: "Montserrat", sans-serif;
   background-color: rgb(0, 45, 104);
   font-size: 25px;
   z-index: 1;
 }
 .navbar.sticky {
-  padding: 15px;
+  padding: 15px 45px;
+  background-color: rgb(0, 29, 66);
 }
 
 .navbar .max-width {
@@ -25,7 +26,7 @@
 }
 .navbar .logo a {
   color: white;
-  font-size: 35px;
+  font-size: clamp(1.375rem, 1.2847rem + 0.7222vw, 2.1875rem);
   font-weight: 600;
   text-decoration: none;
 }
@@ -39,7 +40,7 @@
 .navbar .menu li a {
   display: block;
   color: white;
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 400;
   margin-left: 30px;
   transition: all 0.3s ease;
@@ -53,13 +54,17 @@
 }
 .home {
   width: 100%;
+  height: 72vh;
+  margin-bottom: 100px;
 }
 .home .container {
   width: 100%;
+  height: 100%;
 }
 .home .container img {
   width: 100%;
-  background-position: center;
+  height: 100%;
+  object-fit: cover;
 }
 .home {
   padding-top: 65px;
@@ -80,10 +85,15 @@
   padding: 10px;
   margin-top: 30px;
   margin-bottom: 30px;
+  font-size: clamp(1rem, 0.9861rem + 0.1111vw, 1.125rem);
 }
-.container .img-con {
+.container .article p a {
+  font-size: clamp(1rem, 0.9861rem + 0.1111vw, 1.125rem);
+}
+.container .article .img-con {
   width: 100%;
 }
+
 .container .img-con img {
   width: 100%;
 }
@@ -91,6 +101,7 @@
   font-size: 25px;
   color: rgba(0, 0, 0, 0.886);
   margin-bottom: 35px;
+  font-size: clamp(1.25rem, 1.2153rem + 0.2778vw, 1.5625rem);
 }
 .container .article-wrapper {
   display: flex;
@@ -113,9 +124,14 @@
 .container a {
   color: rgb(0, 133, 242);
   transition: all 0.1s ease-in-out;
+  font-size: clamp(1.25rem, 1.2153rem + 0.2778vw, 1.5625rem);
 }
 .container a:hover {
   opacity: 0.6;
+}
+.container-blog {
+  width: 100%;
+  background-color: rgba(128, 128, 128, 0.067);
 }
 .other-blog {
   max-width: 1000px;
@@ -131,11 +147,30 @@
 }
 .other-blog .head a {
   padding: 10px 20px;
-  border: solid 1px blue;
-  color: blue;
+  border: solid 1px rgb(0, 45, 104);
+  color: rgb(0, 45, 104);
   font-size: 12px;
   border-radius: 25px;
   text-decoration: none;
+  position: relative;
+}
+.other-blog .head a span {
+  position: absolute;
+  background-color: rgb(0, 45, 104);
+  height: 100%;
+  width: 0;
+  left: 0;
+  bottom: 0;
+  z-index: -1;
+  transition: 0.2s;
+  border-radius: inherit;
+}
+.other-blog .head a:hover span {
+  width: 100%;
+}
+.other-blog .head a:hover {
+  color: white;
+  border: none;
 }
 .other-blog .grid {
   width: 100%;

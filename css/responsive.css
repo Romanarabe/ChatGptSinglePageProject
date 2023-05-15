@@ -17,8 +17,14 @@
 }
 
 @media (max-width: 991px) {
+  .navbar {
+    padding: 15px;
+  }
+  .navbar.sticky {
+    padding: 15px;
+  }
   .max-width {
-    padding: 0 50px;
+    padding: 0 10px;
   }
   .header .max-width .header-img {
     height: 75%;
@@ -32,6 +38,7 @@
     display: block;
     z-index: 999;
   }
+
   .navbar .menu {
     position: fixed;
     height: 80vh;
@@ -63,6 +70,13 @@
     justify-content: center;
   }
 }
+@media (max-width: 500px) {
+  .navbar {
+    padding: 15px 5px;
+  }
+}
+
+/* ARTICLE SECTION */
 @media (max-width: 900px) {
   .container .article-wrapper {
     flex-direction: column;
@@ -96,6 +110,7 @@
   .footer .footer-top {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    gap: 35px;
   }
   .footer .footer-top div {
     width: 100%;
