@@ -3,8 +3,14 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <script
+      src="https://code.jquery.com/jquery-3.6.3.js"
+      integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM="
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="js/jQuery-JavaScript-v3.5.1.js"></script>
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/responsive.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -14,8 +20,8 @@
       <!--NavBar Section-->
     <nav class="navbar">
       <div class="max-width">
-        <div class="logo"><a href="#">Chat GPT</a></div>
-      <ul class="menu">
+        <div class="logo" data-aos="fade-down"><a href="#">Chat GPT</a></div>
+      <ul class="menu" data-aos="fade-down">
         <li><a href=https://learncomputertoday.org>Home</a></li>
         <li><a href="#article">What is ChatGPT</a></li>
         <li><a href="#tips"> How to Use?</a></li>
@@ -26,14 +32,14 @@
         </div>
       </div>
     </nav>
-    <section class="home">
+    <section class="home" data-aos="fade-right" data-aos-duration="1000" >
       <div class="container">
         <img src="assets/images/chatgpt3.jpg" alt="">
       </div>
     </section>
     <!-- ARTICLE SECTION -->
     <section class="container">
-      <article class="article" id="article">
+      <article class="article" id="article" data-aos="fade-right" data-aos-duration="1500">
         <h1>What is ChatGPT?</h1>
         <p>
           ChatGPT is a natural language processing tool driven by AI technology
@@ -72,7 +78,7 @@
           >
           and Whisper, an automatic speech recognition system.
         </p>
-        <div class="img-con">
+        <div class="img-con"  data-aos="zoom-in-up">
           <img src="assets/images/chatgpt-logo-header-banner.jpg" alt="chatgpt image" style="max-width: 1000px;">
         </div>
         <h1>How big a deal is ChatGPT?</h1>
@@ -179,7 +185,9 @@
           for yo
         </p>
         <section class="article-wrapper" id="tips">
-          <article class="tips">
+          <article class="tips" data-aos="fade-right"
+          data-aos-offset="300"
+          data-aos-easing="ease-in-sine">
             <h1>How to use ChatGPT to:</h1>
             <ul>
               <li>
@@ -226,7 +234,9 @@
               </li>
             </ul>
           </article>
-          <div class="video">
+          <div class="video" data-aos="fade-left"
+          data-aos-offset="300"
+          data-aos-easing="ease-in-sine">
             <iframe
               width="560"
               height="315"
@@ -293,15 +303,16 @@
     </section>
     <!-- OTHER BLOG SECTION -->
     <section class="container-blog">
-      <section class="other-blog" id="other-blog">
+      <section class="other-blog" id="other-blog" data-aos="fade-up-right" data-aos-duration="500" >
         <div class="head">
           <h2> See Our Popular Blogs</h2>
           <a href="#"><span></span>See All Blogs</a>
         </div>
         <div class="grid">
           <div class="blog">
-            <img src="assets/images/thumb/63d3a4948607112beae38433_how to write a blog using chatgpt-p-800.png" alt=""> 
-            <div class="detail">
+            <img src="assets/images/thumb/63d3a4948607112beae38433_how to write a blog using chatgpt-p-800.png" alt="how to create a blog thumb" data-aos="fade-right" data-aos-duration="1200"> 
+            <div class="detail" data-aos="fade-left" 
+            data-aos-duration="1200">
               <div class="creator">
                 <img src="assets/images/profile/63a0e88a0c9cb42ed33cbcc7_1600718573998-p-500.jpeg" alt="">
                 <span>textcortex.com</span>
@@ -313,10 +324,11 @@
             </div>
           </div>
           <div class="blog">
-            <img src="assets/images/thumb/Cartoon-blogger-on-a-laptop-How-to-write-a-blog-post-with-ChatGPT.png" alt="Christopher Kokoski thumb">
-            <div class="detail">
+            <img src="assets/images/thumb/Cartoon-blogger-on-a-laptop-How-to-write-a-blog-post-with-ChatGPT.png" alt="Christopher Kokoski thumb" data-aos="fade-right" data-aos-duration="1200">
+            <div class="detail" data-aos="fade-left" 
+            data-aos-duration="1200">
               <div class="creator">
-                <img src="assets/images/profile/About-Me-Pic.png" alt="">
+                <img src="assets/images/profile/About-Me-Pic.png" alt="Christopher kokoski pic">
                 <span>Christopher Kokoski</span>
               </div>
               <hr>
@@ -326,8 +338,9 @@
             </div>
           </div>
           <div class="blog">
-            <img src="assets/images/chatgpt-logo-header-banner.jpg" alt="">
-            <div class="detail">
+            <img src="assets/images/chatgpt-logo-header-banner.jpg" alt="Chat gpt thumb" data-aos="fade-right" data-aos-duration="1200">
+            <div class="detail" data-aos="fade-left" 
+            data-aos-duration="1200">
               <div class="creator">
                 <img src="assets/images/profile/Headshot-2-scaled-96x96.jpg" alt="">
                 <span>Josh Haynam</span>
@@ -339,10 +352,11 @@
             </div>
           </div>
           <div class="blog">
-            <img src="assets/images/thumb/background.png" alt="">
-            <div class="detail">
+            <img src="assets/images/thumb/background.png" alt="patryk lasek thumb" data-aos="fade-right" data-aos-duration="1200">
+            <div class="detail" data-aos="fade-left" 
+            data-aos-duration="1200">
               <div class="creator">
-                <img src="assets/images/profile/patrik lasyk.png" alt="">
+                <img src="assets/images/profile/patrik lasyk.png" alt="patryk lasek pic">
                 <span>PATRYK LASEK</span>
               </div>
               <hr>
@@ -352,10 +366,11 @@
             </div>
           </div>
           <div class="blog">
-            <img src="assets/images\/thumb/hero3-chat-exposition.png" alt="">
-            <div class="detail">
+            <img src="assets/images\/thumb/hero3-chat-exposition.png" alt="stephen wolfram thumb" data-aos="fade-right" data-aos-duration="1200">
+            <div class="detail" data-aos="fade-left" 
+            data-aos-duration="1200">
               <div class="creator">
-                <img src="assets/images/profile/sw-portrait.png" alt="">
+                <img src="assets/images/profile/sw-portrait.png" alt="stephen wolfram pic">
                 <span>Stephen Wolfram</span>
               </div>
               <hr>
@@ -365,13 +380,14 @@
             </div>
           </div>
           <div class="blog">
-            <img src="assets/images/thumb/chatgpt-copywriting_1200x630.jpg" alt="">
-            <div class="detail">
+            <img src="assets/images/thumb/chatgpt-copywriting_1200x630.jpg" alt="Daria Zhuravleva thumb" data-aos="fade-right" data-aos-duration="1200">
+            <div class="detail" data-aos="fade-left" 
+            data-aos-duration="1200">
               <div class="creator">
-                <img src="assets/images/profile/photo_2021-06-02_02-30-22-100x100.jpg" alt="">
+                <img src="assets/images/profile/photo_2021-06-02_02-30-22-100x100.jpg" alt="Daria pic">
                 <span>Daria Zhuravleva </span>
               </div>
-              <hr>
+                <hr>
               <div class="title">
                 <p><a href="https://selzy.com/en/blog/chatgpt-copywriting-study/" target="_blank">How We Wrote an Article With ChatGPT | Selzy Blog</a></p>
               </div>
@@ -382,8 +398,8 @@
     </section>
     
     <!-- FOOTER SECTION -->
-    <footer class="footer">
-      <div class="footer-top">
+    <footer class="footer" data-aos="zoom-in-up">
+      <div class="footer-top" data-aos="zoom-in-up" data-aos-duration="1500">
         <div class="footer-1">
                   <h3>ABOUT</h3>
                   <p>Learn Computer Today is duly registered to the Philippine Securities and Exchange Commission under Educational Support. A proof of our sincere commitment in bringing technology to all who want to learn. The certificates issued by Learn Computer Today are valid and can be used for Job Applications and others.</p>
@@ -419,15 +435,14 @@
                   </ul>
         </div>
           </div>
-  
           <div class="footer-bottom">
               <h4>Copyright © 2022 Learn Computer Today Philippines | All Rights Reserved</h4>
-  
           </div>
-  
-        
-  
       </footer>
+      <script>
+        AOS.init();
+      </script>
       <script src="main.script.js"></script>
   </body>
+
 </html>
